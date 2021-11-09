@@ -1,1 +1,189 @@
+/* 
+=============
+ custom font
+=============
+*/
+
+@font-face {
+ font-family: 'roboto';
+ src: url('./assets/fonts/Roboto-Regular-webfont.woff') format('woff'),
+      url('./assets/fonts/Roboto-Regular-webfont.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+
+}
+
+@font-face {
+ font-family: 'roboto';
+ src: url('./assets/fonts/Roboto-Light-webfont.woff') format('woff'),
+      url('./assets/fonts/Roboto-Light-webfont.svg') format('svg');
+ font-weight: 300;
+ font-style: normal;
+
+}
+
+@font-face{
+ font-family: 'roboto';
+ src:  url('./assets/fonts/Roboto-Bold-webfont.woff') format('woff'),
+       url('./assets/fonts/Roboto-Bold-webfont.svg') format('svg');
+ 
+ font-weight: bold;
+ font-style: normal;
+ }
+ 
+ @font-face {
+  font-family: 'roboto';
+  src: url('./assets/fonts/Roboto-BoldItalic-webfont.woff') format('woff2'),
+       url('./assets/fonts/Roboto-BoldItalic-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: italic;
+ 
+ }
+
+
+/* 
+===============
+ global styles
+===============
+*/
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+}
+
+
+
+/* 
+================
+   variables
+================
+*/
+
+:root {
+ /* backgroud colours */
+ --clr-bg-header:rgb(3,37,108);
+ --clr-bg-primary:rgb(37,65,178);
+ --clr-bg-box:rgb(249,249,249);
+ --clr-bg-buttons:rgb(6,190,225);
+
+ /* typographi colours */
+ --clr-tp-nav:rgb(255,255,255);
+ --clr-tp-box:rgb(0,0,0);
+}
+
+/* 
+================
+ general styles
+================
+*/
+
+
+
+/* 
+================
+typografi styles
+================
+*/
+
+/* Placeholder for logo */
+
+.title {
+ font-family: 'roboto',sans-serif;
+ font-weight: bold;
+ font-style: normal;
+ font-size: 3em;
+ color: var(--clr-tp-nav);
+}
+
+/* Navigation bar */
+
+.nav__link {
+ font-family: 'roboto',sans-serif;
+ font-weight: 300;
+ font-style: normal;
+ color: var(--clr-tp-nav);
+ text-decoration: none;
+}
+.nav li:hover {
+ opacity: 0.5;
+}
+
+/* Sub titles and Content text */
+.sub-title {
+ font-family: 'roboto',sans-serif;
+}
+
+.text {
+ font-family: 'roboto',sans-serif;
+ font-weight: 300;
+ font-style: normal;
+}
+
+/* 
+================
+   home.html
+================
+*/
+
+/* Logo bar */
+.something {
+ width: 100%;
+ height: 126px;
+ background-color: var(--clr-bg-header);
+ position: relative;
+}
+
+.title {
+ position: absolute;
+ left: 73px;
+ top: 28px;
+}
+
+/* Navigation bar */
+
+.nav ul{
+ margin-left: -50px;
+ background-color: var(--clr-bg-primary);
+ display: flex;
+}
+
+.nav li{
+ list-style: none;
+ padding: 0 100px;
+}
+
+/* Content */
+
+.main__grid {
+ margin: 61px 72px 37px 72px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 10em;
+}
+
+.box_1 {
+ grid-column: 1/-1;
+}
+
+.box_2,
+.box_3 {
+ padding: 4em;
+}
+
+.box_2 p,
+.box_3 p {
+ padding:10px 0 ;
+}
+
+.boxes {
+ background-color: var(--clr-bg-box);
+}
+
+
+
+
+/* Footer */
 
